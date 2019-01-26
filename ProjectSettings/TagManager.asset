@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - GerenteTrabalho
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 470851267
+    locked: 0
+  - name: "c\xEDrculo cinza"
+    uniqueID: 170875707
+    locked: 0
+  - name: "bot\xE3o branco"
+    uniqueID: 3947648017
+    locked: 0
+  - name: "m\xE3ozinha"
+    uniqueID: 3373938553
+    locked: 0
+  - name: "bot\xE3o de abrir a loja"
+    uniqueID: 2846446083
+    locked: 0
+  - name: +dinheiro
+    uniqueID: 2587600163
+    locked: 0
+  - name: loja
+    uniqueID: 4213280707
+    locked: 0
+  - name: "bot\xE3o sair da loja"
+    uniqueID: 1092428651
+    locked: 0
+  - name: "anima\xE7\xF5es do chefe"
+    uniqueID: 1040794421
+    locked: 0
+  - name: tela do fim do dia
+    uniqueID: 2163750353
+    locked: 0
+  - name: "bot\xE3o fim do dia"
+    uniqueID: 1640596723
+    locked: 0
