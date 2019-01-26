@@ -18,4 +18,6 @@ public class botãoAbrirLoja : MonoBehaviour
     {
         gerente.abrirALoja();
     }
+
+    //comentário
 }
