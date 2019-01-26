@@ -6,6 +6,8 @@ public class bolinha : MonoBehaviour
 {
     TargetJoint2D mola;
     Vector2 cursor;
+    Vector2 posiçãoAnterior;
+    public bool emMovimento;
 
     private void Start()
     {
@@ -22,6 +24,14 @@ public class bolinha : MonoBehaviour
         {
             mola.target = cursor;
         }
+
+        if (Vector2.Distance(posiçãoAnterior, transform.position) > .1f)
+        { emMovimento = true; }
+        else
+        { emMovimento = false; }
+
+        posiçãoAnterior = transform.position;
+        
     }
 
     private void OnMouseDrag()
