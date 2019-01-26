@@ -56,13 +56,16 @@ public class gerenteTrabalho : MonoBehaviour
         porcentagemDoCiclo = tempoPassadoDoCiclo / tamanhoDoCiclo;
 
         //testa se fim do dia
-        if (horário > tamanhoDoDia && !animaçChefeAcontecendo)
+        if (tamanhoDoDia != 0)
         {
-            if (telaDeFimDoDia == null)
+            if (horário > tamanhoDoDia && !animaçChefeAcontecendo)
             {
-                fecharALoja();
+                if (telaDeFimDoDia == null)
+                {
+                    fecharALoja();
 
-                telaDeFimDoDia = Instantiate(telaDeFimDoDiaPrefab);
+                    telaDeFimDoDia = Instantiate(telaDeFimDoDiaPrefab);
+                }
             }
         }
     }
@@ -96,8 +99,10 @@ public class gerenteTrabalho : MonoBehaviour
         tempoPassadoDoCiclo = 0;
 
         chanceDoChefe += 5;
-
-        testaSeChefe();
+        if (tamanhoDoDia > 0)
+        {
+            testaSeChefe();
+        }
     }
 
     //conta um acerto (cria o objeto que indica o acerto), adiciona o dinheiro para o jogador e reseta o ciclo
