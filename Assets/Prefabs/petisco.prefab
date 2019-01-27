@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1076333634431206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9035368, y: -3.1998217, z: 0}
+  m_LocalPosition: {x: -8.234827, y: 1.2197737, z: 0}
   m_LocalScale: {x: 0.10117064, y: 0.10776156, z: 0.2681394}
   m_Children: []
   m_Father: {fileID: 0}
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1076333634431206}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a143fb252d84da40a71df14db77df3d, type: 3}
+  m_Script: {fileID: 11500000, guid: bcaf2530a0bf44b48acf5210d7e7645b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212509213847134518
@@ -141,5 +141,5 @@ SpriteRenderer:
   m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0

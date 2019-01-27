@@ -20,11 +20,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4449503225107056}
   - component: {fileID: 212563195886993518}
-  - component: {fileID: 114736548367864204}
+  - component: {fileID: 114528085490159110}
   - component: {fileID: 61051608964871044}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: tijela temp
-  m_TagString: Untagged
+  m_TagString: Tijela
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,8 +36,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1241135606138746}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.808, y: -2.371, z: 0}
-  m_LocalScale: {x: 1.8976953, y: 1.8335739, z: 1}
+  m_LocalPosition: {x: 6.2097, y: -2.5888, z: 0}
+  m_LocalScale: {x: 0.1110785, y: 0.10732529, z: 0.05853339}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -58,7 +58,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 20, y: 20}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -67,7 +67,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114736548367864204
+--- !u!114 &114528085490159110
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -75,12 +75,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1241135606138746}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e75cfce8f38e234a952ea21c58b6018, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d2675811dee40c46b3cbb62ad50a709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "temRa\xE7\xE3o": 0
-  poteCheio: {fileID: 21300000, guid: fbccc031ed4ba0148b608d283dd127e0, type: 3}
-  poteVazio: {fileID: 21300000, guid: f0473cab8aab65f4dba3b3a46a3d89e6, type: 3}
+  "temRa\xE7\xE3o": 1
+  poteCheio: {fileID: 21300000, guid: 7ddbc3924e22cec4bb2690596b3aa134, type: 3}
+  poteVazio: {fileID: 21300000, guid: 9317870fe17dd994ba75c808bf070b8d, type: 3}
 --- !u!212 &212563195886993518
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -112,10 +112,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1108851219
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f0473cab8aab65f4dba3b3a46a3d89e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9317870fe17dd994ba75c808bf070b8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
