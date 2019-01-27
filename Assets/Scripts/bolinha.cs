@@ -8,23 +8,25 @@ public class bolinha : MonoBehaviour
     Vector2 cursor;
     Vector2 posiçãoAnterior;
     SpriteRenderer sprite;
+    Rigidbody2D rigidbody;
     public Sprite bola, rato;
     public bool emMovimento;
+    bool continPulando;
+    float continPulandoAtual, continPulandoTotal = 2f;
     public bool boolRato, boolBola = true;
 
     private void Start()
     {
         mola = transform.GetComponent<TargetJoint2D>();
+        rigidbody = GetComponent<Rigidbody2D>();
+        sprite = transform.GetComponent<SpriteRenderer>();
 
         mola.enabled = false;
-
-        sprite = transform.GetComponent<SpriteRenderer>();
 
         if (boolRato)
         { sprite.sprite = rato; } 
         else if (boolBola)
         { sprite.sprite = bola; }
-
     }
 
     private void Update()
@@ -42,6 +44,16 @@ public class bolinha : MonoBehaviour
         { emMovimento = false; }
 
         posiçãoAnterior = transform.position;
+
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            pular();
+        }
+
+        if (continPulandoAtual > 0)
+        {
+            continPulandoAtual -= Time.deltaTime;
+        }
     }
 
     private void OnMouseDrag()
@@ -62,5 +74,18 @@ public class bolinha : MonoBehaviour
     public void mudaSpriteBola()
     {
         sprite.sprite = bola;
+    }
+
+    public void pular ()
+    {
+        if (continPulandoAtual <= 0)
+        {
+            continPulandoAtual = continPulandoTotal;
+
+            float velVertical = Random.Range(200, 350);
+            float velHorizontal = Random.Range(-250, 250);
+
+            rigidbody.AddForce(new Vector2(velHorizontal, velVertical));
+        }
     }
 }

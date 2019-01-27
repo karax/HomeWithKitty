@@ -32,4 +32,9 @@ public class poteDeRação : MonoBehaviour
             sprite.sprite = poteVazio;
         }
     }
+
+    public void gatoComer ()
+    {
+        temRação = false;
+    }
 }

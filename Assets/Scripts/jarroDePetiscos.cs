@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class jarroDePetiscos : MonoBehaviour
 {
-    public Transform petisco;
-    public bool temPetiscos;
+    public Transform petiscoPrefab;
+    public bool petiscoNoChão;
     SpriteRenderer sprite;
     public Sprite poteCheio, poteVazio;
+    public Transform petiscoInstanciado;
 
     private void Start()
     {
@@ -16,9 +17,9 @@ public class jarroDePetiscos : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if (gerenteGeral.quantDePetiscos > 0)
+        if (gerenteGeral.quantDePetiscos > 0 && !petiscoNoChão)
         {
-            Instantiate(petisco);
+            petiscoInstanciado = Instantiate(petiscoPrefab);
 
             gerenteGeral.quantDePetiscos--;
         }
@@ -26,7 +27,7 @@ public class jarroDePetiscos : MonoBehaviour
 
     private void Update()
     {
-        if (!temPetiscos && sprite.sprite != poteVazio)
+        if (gerenteGeral.quantDePetiscos<=0 && sprite.sprite != poteVazio)
         {
             sprite.sprite = poteVazio;
         }
