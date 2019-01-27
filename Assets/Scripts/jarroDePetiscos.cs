@@ -5,6 +5,14 @@ using UnityEngine;
 public class jarroDePetiscos : MonoBehaviour
 {
     public Transform petisco;
+    public bool temPetiscos;
+    SpriteRenderer sprite;
+    public Sprite poteCheio, poteVazio;
+
+    private void Start()
+    {
+        sprite = transform.GetComponent<SpriteRenderer>();
+    }
 
     private void OnMouseUp()
     {
@@ -13,6 +21,14 @@ public class jarroDePetiscos : MonoBehaviour
             Instantiate(petisco);
 
             gerenteGeral.quantDePetiscos--;
+        }
+    }
+
+    private void Update()
+    {
+        if (!temPetiscos && sprite.sprite != poteVazio)
+        {
+            sprite.sprite = poteVazio;
         }
     }
 }
