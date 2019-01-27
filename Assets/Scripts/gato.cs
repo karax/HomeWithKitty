@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
 public class gato : MonoBehaviour {
@@ -9,15 +8,14 @@ public class gato : MonoBehaviour {
     private Rigidbody2D rigidbody2d;
     public Transform catTransform;
 
-    public float catMovementSpeed;
+    private float catMovementSpeed;
     public bool isWalking;
-    public float walkTime;
+    private float walkTime;
     private float walkCounter;
-    public float waitTime;
+    private float waitTime;
     private float waitCounter;
-    public int walkDirection;
+    private int walkDirection;
     public Vector3 currRot;
-    public int directionBefore;
 
     // Use this for initialization
     void Start () {
@@ -77,5 +75,9 @@ public class gato : MonoBehaviour {
     {      
         walkDirection = Random.Range(0, 2);
         isWalking = true;
+        if(gerenteGeral.saúdeDoGato == 0)
+        {
+            currRot.z = 90;
+        }
     }
 }
