@@ -5,15 +5,12 @@ using UnityEngine;
 public class gerenteGeral
 {
     public static float saúdeDoGato;
+    public static float saciaçãodoDoGato = 40;
     public static int dinheiro;
-    public static int quantDePetiscos;
-    public static int quantDeRação;
-    public static bool foiAlimentado, foiLimpado;
+    public static int quantDePetiscos = 3; //arrumar esses valores
+    public static int quantDeRação = 3;//arrumar esses valores
+    public static bool foiAlimentado, foiLimpo;
     public static bool arranhador, casaPremium;
-    public static float velocDaPerdaSaúde = .1f;
 
-    public static void diminuirSaúdeDoGato ()
-    {
-        saúdeDoGato -= velocDaPerdaSaúde;
-    }
+    
 }
