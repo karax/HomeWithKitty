@@ -4,33 +4,19 @@ using UnityEngine;
 
 public class gerenteTrabalho : MonoBehaviour
 {
-    //variável do tamanho do ciclo, em segundos (padrão 2, mas no inspector pode ser alterado)
     public float tamanhoDoCiclo = 2f;
-    //controle do tempo passado
     float tempoPassadoDoCiclo;
-    //variável da porcentagem do ciclo passado, entre 0 a 1;
     [HideInInspector]public float porcentagemDoCiclo;
-    //o objeto que indica +$0
     public Transform símboloZeroDinheiros;
-    //o objeto que indica +$100
     public Transform símboloCemDinheiros;
-    //tamanho do dia
     public float tamanhoDoDia = 20;    
-    //controle do horário do trabalho
     float horário;
-    //chance do chefe fazer uma visita
     int chanceDoChefe;
-    //indica se a janela da loja está aberta
     bool lojaAberta;
-    //prefabs das animações do chefe
     public Transform[] animaçõesDoChefe;
-    //transform da animação do chefe
     Transform transfDaAnimaçDoChefe;
-    //indica que a animação do chefe está acontecendo
     public bool animaçChefeAcontecendo;
-    //prefab da tela de fim de dia
     public Transform telaDeFimDoDiaPrefab;
-    //transform da tela de fim do dia
     Transform telaDeFimDoDia;
 
     public Transform prefabDaLoja;

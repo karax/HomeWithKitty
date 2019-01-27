@@ -25,7 +25,7 @@ public class símbolosGanho : MonoBehaviour
         transform.Translate(Vector2.up * impulsoVertical + Vector2.right * grauAleatório);
 
         //checa quanto tempo o objeto existe
-        tempoDeVidaAtual = tempoDeVidaAtual + Time.deltaTime;
+        tempoDeVidaAtual += Time.deltaTime;
 
         //checa se o objeto existe a mais tempo do que o permitido dele existir
         if (tempoDeVidaAtual > tempoDeVidaMax)

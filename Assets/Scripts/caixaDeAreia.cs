@@ -30,19 +30,13 @@ public class caixaDeAreia : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (temCocô)
+        if (temCocô && gerenteGeral.quantDeAreia > 0)
         {
             sprite.sprite = semCocô;
+
+            gerenteGeral.quantDeAreia--;
 
             temCocô = false;
         }
     }
-
-    /*private void Update()
-    {
-        if (temCocô)
-        {
-            sprite.sprite = poteVazio;
-        }
-    }*/
 }
