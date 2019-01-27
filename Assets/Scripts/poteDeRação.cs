@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class poteDeRação : MonoBehaviour {
-
+public class poteDeRação : MonoBehaviour
+{
     public bool temRação;
     SpriteRenderer sprite;
     public Sprite poteCheio, poteVazio;
