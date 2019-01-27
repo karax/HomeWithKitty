@@ -8,27 +8,7 @@ public class gerenteDoEstadoDoGato : MonoBehaviour
 	
 	void Start ()
     {
-		if (gerenteGeral.arranhador)
-        {
-            if (gerenteGeral.casaPremium)
-            {
-                gerenteGeral.saúdeMáximaDoGato = 150;
-            }
-            else
-            {
-                gerenteGeral.saúdeMáximaDoGato = 125;
-            }
-        }
-        else if (gerenteGeral.casaPremium)
-        {
-            gerenteGeral.saúdeMáximaDoGato = 125;
-        }
-        else
-        {
-            gerenteGeral.saúdeMáximaDoGato = 100;
-        }
-
-        gerenteGeral.saciaçãoMáximadoDoGato = 100;
+		
 	}
 		
 	void Update ()
@@ -51,16 +31,6 @@ public class gerenteDoEstadoDoGato : MonoBehaviour
         if (!gerenteGeral.foiLimpo)
         {
             gerenteGeral.saúdeAtualDoGato -= quantMenosSaúde * Time.deltaTime * 2;
-        }
-
-        if (gerenteGeral.saciaçãoAtualdoDoGato > gerenteGeral.saciaçãoMáximadoDoGato)
-        {
-            gerenteGeral.saciaçãoAtualdoDoGato = gerenteGeral.saciaçãoMáximadoDoGato;
-        }
-
-        if (gerenteGeral.saciaçãoAtualdoDoGato < 0)
-        {
-            gerenteGeral.saciaçãoAtualdoDoGato = 0;
         }
     }
 }

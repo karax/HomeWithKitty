@@ -45,20 +45,15 @@ public class gato : MonoBehaviour
     private float waitTime;
     private float waitCounter;
     private int walkDirection;
-    public Vector2 rotaçãoAtual;
-
-    void Start()
+    public VeStart()
     {
         jarroDePetiscos = GameObject.FindGameObjectWithTag("jarroDePetiscos").GetComponent<jarroDePetiscos>();
         brinquedoObj = GameObject.FindGameObjectWithTag("Brinquedo");
         brinquedo = brinquedoObj.GetComponent<bolinha>();
         poteDeRaçãoObj = GameObject.FindGameObjectWithTag("Tijela");
         poteDeRação = poteDeRaçãoObj.GetComponent<poteDeRação>();
-        anim = this.GetComponent<Animator>();
-
-        tempoIdleInicial = 3;
-
-        rigidbody = transform.GetComponent<Rigidbody2D>();
+        anim
+form.GetComponent<Rigidbody2D>();
         waitCounter = 1;
         walkCounter = 2;
         walkDirection = 1;
@@ -67,11 +62,7 @@ public class gato : MonoBehaviour
 
     void Update()
     {
-        tempoDeMudarAção -= Time.deltaTime;
-
-        tempoIdleInicial -= Time.deltaTime;
-        if (tempoIdleInicial < 0)
-        {
+        tempoDeMudarAçã   {
             idleInicial = true;
         }
         if (idleInicial)
@@ -129,7 +120,7 @@ public class gato : MonoBehaviour
 
                     //adiciona pontos de saúde ao gato
 
-                    //muda sprite para idle
+                    //muda spAtualpara idle
                     anim.SetBool("isWalking", false);
                     anim.SetBool("isEating", false);
                     anim.SetBool("isPlaying", false);
@@ -172,7 +163,7 @@ public class gato : MonoBehaviour
                         transform.eulerAngles = rotaçãoAtual;
                     }
 
-                    if (tempoAnimaçBrinksAtual != TempoAnimaçBrinksTotal)
+         Atual      if (tempoAnimaçBrinksAtual != TempoAnimaçBrinksTotal)
                     {
                         tempoAnimaçBrinksAtual = TempoAnimaçBrinksTotal;
                     }
@@ -206,7 +197,7 @@ public class gato : MonoBehaviour
                     anim.SetBool("isWalking", true);
                     anim.SetBool("isEating", false);
                     anim.SetBool("isPlaying", false);
-                    anim.SetBool("isIdle", false);
+                    animAtualool("isIdle", false);
 
                     if (transform.position.x - poteDeRaçãoObj.transform.position.x < 0)
                     {

@@ -13,7 +13,7 @@ public class gerenteGeral
     public static int quantDeRação = 3;//arrumar esses valores
     public static int quantDeAreia = 0;
     public static bool foiLimpo;
-    public static bool arranhador, casaPremium, novelo, rato;
+    public static bool arranhador, casaPremium, novelo;
 
     
 }
